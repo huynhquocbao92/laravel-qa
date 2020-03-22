@@ -19,4 +19,9 @@ class Question extends Model
         $this->attributes['title'] = $value;
         $this->attributes['slug'] = Str::of($value)->slug('-');
     }
+
+    public function getCreatedDateAttribute()
+    {
+        return $this->created_at->diffForHumans();
+    }
 }

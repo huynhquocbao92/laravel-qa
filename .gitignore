@@ -16,3 +16,4 @@ package-lock.json
 public/mix-manifest.json
 package-lock.json
 package.json
+composer.lock
